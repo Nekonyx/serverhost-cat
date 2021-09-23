@@ -10,7 +10,7 @@ const IndexPage: NextPage = () => {
       <div className="cats">
         <div className="cats__container">
           {cats.map((image) => (
-            <div key={image.src} className="cats__item">
+            <div key={image.src}>
               <Image src={image} alt="cat" />
             </div>
           ))}
@@ -34,9 +34,12 @@ const IndexPage: NextPage = () => {
           grid-gap: 2em;
         }
 
-        .cats__item img {
-          border-radius: 20px;
+        .cats__container * {
           width: 100%;
+        }
+
+        .cats__container img {
+          border-radius: 20px;
         }
       `}</style>
     </Fragment>
