@@ -36,6 +36,7 @@ const IndexPage: NextPage = () => {
 
         .cats__item img {
           border-radius: 20px;
+          width: 100%;
         }
       `}</style>
     </Fragment>
